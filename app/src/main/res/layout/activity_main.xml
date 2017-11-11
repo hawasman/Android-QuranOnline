@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.madminds.quranonline.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:elevation="5dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rewind"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_fast_rewind" />
+
+                <ImageView
+                    android:id="@+id/play"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_play" />
+
+                <ImageView
+                    android:id="@+id/forward"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_fast_forward" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+</LinearLayout>
